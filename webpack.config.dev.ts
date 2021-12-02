@@ -15,7 +15,7 @@ const config: Webpack.Configuration = {
         publicPath: '/assets/',
       },
       {
-        directory: `${__dirname}/distt`,
+        directory: `${__dirname}/dist`,
         publicPath: '/dist/',
       },
     ],
@@ -53,7 +53,10 @@ const config: Webpack.Configuration = {
     sourceMapFilename: '[file].map',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', 'tsx'],
+    alias: {
+      "~": `${__dirname}/src`,
+    },
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
 };
 

@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "module": "CommonJS",
     "moduleResolution": "node",
     "noImplicitAny": true,
+    "paths": {
+      "~/*": ["src/*"]
+    },
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2020",

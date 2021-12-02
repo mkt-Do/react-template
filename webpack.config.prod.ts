@@ -33,7 +33,10 @@ const config: Webpack.Configuration = {
     publicPath: `${__dirname}/dist`,
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', 'tsx'],
+    alias: {
+      "~": `${__dirname}/src`,
+    },
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
 };
 
